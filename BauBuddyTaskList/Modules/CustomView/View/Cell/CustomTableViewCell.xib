@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CustomTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" id="KGk-i7-Jjw" customClass="CustomTableViewCell" customModule="BauBuddyTaskList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEt-5P-3qp">
+                        <rect key="frame" x="10" y="30" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKW-R3-XPF">
+                        <rect key="frame" x="10" y="81" width="33" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCL-NB-jii">
+                        <rect key="frame" x="10" y="132" width="88" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ColorCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7S-0i-IRq">
+                        <rect key="frame" x="10" y="183" width="82" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lEt-5P-3qp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0g7-nU-9AQ"/>
+                    <constraint firstItem="K7S-0i-IRq" firstAttribute="top" secondItem="DCL-NB-jii" secondAttribute="bottom" constant="30" id="RV8-tN-Tj0"/>
+                    <constraint firstItem="DCL-NB-jii" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ue1-Xz-cqc"/>
+                    <constraint firstItem="VKW-R3-XPF" firstAttribute="top" secondItem="lEt-5P-3qp" secondAttribute="bottom" constant="30" id="WfZ-8I-YDr"/>
+                    <constraint firstItem="lEt-5P-3qp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="X6J-WK-69C"/>
+                    <constraint firstItem="DCL-NB-jii" firstAttribute="top" secondItem="VKW-R3-XPF" secondAttribute="bottom" constant="30" id="dec-OA-ZI6"/>
+                    <constraint firstItem="K7S-0i-IRq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="hoq-hG-ZSh"/>
+                    <constraint firstItem="VKW-R3-XPF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tM0-0o-PUZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="colorCodeLabel" destination="K7S-0i-IRq" id="OsC-0y-ggr"/>
+                <outlet property="descriptionLabel" destination="DCL-NB-jii" id="Op8-tC-01f"/>
+                <outlet property="taskLabel" destination="lEt-5P-3qp" id="3ht-Vo-u5V"/>
+                <outlet property="titleLabel" destination="VKW-R3-XPF" id="DCM-dl-3P4"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="21"/>
+        </tableViewCell>
+    </objects>
+</document>
